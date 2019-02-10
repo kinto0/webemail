@@ -1,0 +1,9 @@
+<h1>
+    Hello. Please sign up below for weather updates
+</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="OK">
+</form>
