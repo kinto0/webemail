@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import Person, City
 
+from .models import Person, City
+from .emailing import email_everyone
 from .forms import AddPersonForm
 
 
@@ -40,3 +41,8 @@ def invalid_city(request):
 
 def success(request):
     return HttpResponse("Thanks for signing up!")
+
+
+def send(request):
+    email_everyone()
+    return HttpResponse("Nice! You sent everyone an email!");

@@ -4,8 +4,9 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('bad-email/', views.repeat_email, name='index'),
-    path('bad-city/', views.invalid_city, name='index'),
-    path('error/', views.error, name='index'),
-    path('success/', views.success, name='index'),
+    path('bad-email/', views.repeat_email, name='bad email'),
+    path('bad-city/', views.invalid_city, name='bad city'),
+    path('error/', views.error, name='error'),
+    path('success/', views.success, name='success'),
+    path('send/', views.send, name='send'),
 ]
