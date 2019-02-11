@@ -1,9 +1,23 @@
-<h1>
-    Hello. Please sign up below for weather updates
-</h1>
+{# Load the tag library #}
+{% load bootstrap4 %}
 
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="OK">
-</form>
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+
+<div class="col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1>
+                Hello. Please sign up below for weather updates
+            </h1>
+
+            <form action="" method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <button type="submit" class="btn btn-primary" >
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

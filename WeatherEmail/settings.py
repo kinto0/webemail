@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap4',
+    'bs4',
+    'mechanize',
     'website.apps.WebsiteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
