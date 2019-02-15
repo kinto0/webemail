@@ -33,8 +33,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'bootstrap4',
-    'bs4',
     'mechanize',
+    'requests',
     'website.apps.WebsiteConfig',
     'django.contrib.admin',
     'django.contrib.auth',

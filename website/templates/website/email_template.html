@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+
+
+<h1>
+    {{ subject }}
+</h1>
+
+<p>
+    Hi {{ name }}. This is where the fancy rest of the email would go. With colors and eyecatching visuals.
+</p>
